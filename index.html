@@ -1,0 +1,2295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/venobox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsiv.css">
+</head>
+<body>
+
+  <!-- ======================
+       preloder-part-start
+  =========================== -->
+
+  <!-- <div class="preloder">
+    <img src="images/football-2-unscreen.gif" alt="football.gif">
+  </div> -->
+
+  <!-- ======================
+       preloder-part-end
+  =========================== -->
+
+  <!-- ======================
+       header-part-start
+  =========================== -->
+
+  <header>
+    <div class="container">
+      <div class="main">
+        <p>Welcome to Tournament</p>
+        <div class="login">
+          <div class="main">
+            <h3>My Account</h3>
+            <h2>Login / Register</h2>
+          </div>
+          <i class="fa-solid fa-right-to-bracket signin"></i>
+        </div>
+        <div class="search-big">
+        <input placeholder="Search" type="text">
+        <i class="fas fa-search"></i>
+        </div>
+        <form id="content">
+          <input type="text" name="input" class="input" id="search-input">
+          <button type="reset" class="search" id="search-btn"></button>
+        </form>
+      </div>
+    </div>
+    <div class="sidebar">
+      <div class="overlay">
+      <i class="fa-solid fa-xmark crose"></i>
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">My account</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Login/Register</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <div class="fm">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control my" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control my" id="exampleInputPassword1">
+            </div>
+            <div class="btns">
+              <a href="#">Sing In</a>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+          <div class="fm">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"></label>
+              <input type="email" placeholder="First name" class="form-control my" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"></label>
+              <input type="email" placeholder="Last name" class="form-control my" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"></label>
+              <input type="email" placeholder="Email address" class="form-control my" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label"></label>
+              <input type="password" placeholder="Password" class="form-control my" id="exampleInputPassword1">
+            </div>
+            <div class="btns">
+              <a href="#">Sing up</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======================
+        header-part-end
+  =========================== -->
+
+  <!-- ======================
+        navbar-part-start
+  =========================== -->
+
+     
+    <div class="menu">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+              <div class="logo">
+                <img src="images/logo.png" alt="logo.png">
+              </div>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            
+          </button>
+          <div id="sidebar" class="sidebar-menu"></div>
+          <div class="b">
+            <button id="openSidebar" class="btn"><i class="fa-solid fa-bars-staggered"></i></button>
+            </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Fixtures</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Blog</a>
+              </li>
+                </ul>
+              <li class="nav-item">
+                <a class="nav-link disabled">Gallery</a>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Pages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Contact</a>
+              </li>
+          </div>
+          <div class="add">
+            <div class="main">
+              <i class="fas fa-cart-arrow-down"></i>
+              <h5>2 Items</h5>
+            </div>
+          </div>
+        </div>
+    </nav>
+  </div>
+
+      <!-- ======================
+            navbar-part-end
+      =========================== -->
+
+      <!-- ======================
+            banner-part-start
+      =========================== -->
+
+      <section id="banner-part">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-touch="false" data-bs-interval="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="ground">
+              <img src="images/banner-img.png" class="d-block w-100" alt="banner">
+              <div class="overlay"></div>
+              <div class="overlay-2">
+                <div class="details">
+                  <h1>Legend FC<span>vs</span>Superstar FC</h1>
+                  <h3>Time Table</h3>
+                     <div class="main">
+                      <div class="item">
+                        <h4 id="day"></h4>
+                        <p>Days</p>
+                      </div>
+                      <div class="item">
+                        <h4 id="hour"></h4>
+                        <p>Hours</p>
+                      </div>
+                      <div class="item">
+                        <h4 id="min"></h4>
+                        <p>Mins</p>
+                      </div>
+                      <div class="item">
+                        <h4 id="sec"></h4>
+                        <p>Secs</p>
+                      </div>
+                     </div>
+                  <button>Book Ticket</button>
+                  <button>Watch Later</button>
+                </div>
+              </div>
+              <div class="details-2">
+                <div class="text">
+                  <h1>Legend FC<span>vs</span>Superstar FC</h1>
+                  <h3>Time Table</h3>
+                </div>
+                <div class="row">
+                  <div class="col-lg-3">
+                    <div class="item">
+                      <h4 id="day-4"></h4>
+                      <p>Days</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="item">
+                      <h4 id="hour-4"></h4>
+                      <p>Hours</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="item">
+                      <h4 id="min-4"></h4>
+                      <p>Mins</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="item">
+                      <h4 id="sec-4"></h4>
+                      <p>Secs</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="bn">
+                <button>Book Ticket</button>
+                <button>Watch Later</button>
+                </div>
+              </div>
+            </div>
+              <div class="img">
+                <img class="player" src="images/banner-player.png" alt="banner-player.png">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="ground">
+              <img src="images/banner-2.jpg" class="d-block w-100" alt="banner">
+              <div class="overlay"></div>
+              <div class="overlay-2">
+                <div class="details">
+                  <h1>Legend FC<span>vs</span>Superstar FC</h1>
+                  <h3>Time Table</h3>
+                  <div class="main">
+                    <div class="item">
+                      <h4 id="day-2"></h4>
+                      <p>Days</p>
+                    </div>
+                    <div class="item">
+                      <h4 id="hour-2"></h4>
+                      <p>Hours</p>
+                    </div>
+                    <div class="item">
+                      <h4 id="min-2"></h4>
+                      <p>Mins</p>
+                    </div>
+                    <div class="item">
+                      <h4 id="sec-2"></h4>
+                      <p>Secs</p>
+                    </div>
+                   </div>
+                  <button>Book Ticket</button>
+                  <button>Watch Later</button>
+                </div>
+              </div>
+              <div class="details-2">
+                <div class="text">
+                  <h1>Legend FC<span>vs</span>Superstar FC</h1>
+                <h3>Time Table</h3>
+                </div>
+                <div class="row">
+                  <div class="col-lg-3">
+                    <div class="item">
+                      <h4 id="day-5"></h4>
+                      <p>Days</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="item">
+                      <h4 id="hour-5"></h4>
+                      <p>Hours</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="item">
+                      <h4 id="min-5"></h4>
+                      <p>Mins</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="item">
+                      <h4 id="sec-5"></h4>
+                      <p>Secs</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="bn">
+                <button>Book Ticket</button>
+                <button>Watch Later</button>
+                </div>
+              </div>
+            </div>
+              <div class="img">
+                <img class="player" src="images/banner-player.png" alt="banner-player.png">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="ground">
+              <img src="images/banner-3.jpg" class="d-block w-100" alt="banner">
+              <div class="overlay"></div>
+              <div class="overlay-2">
+                <div class="details">
+                  <h1>Legend FC   <span>vs</span>   Superstar FC</h1>
+                  <h3>Time Table</h3>
+                  <div class="main">
+                    <div class="item">
+                      <h4 id="day-3"></h4>
+                      <p>Days</p>
+                    </div>
+                    <div class="item">
+                      <h4 id="hour-3"></h4>
+                      <p>Hours</p>
+                    </div>
+                    <div class="item">
+                      <h4 id="min-3"></h4>
+                      <p>Mins</p>
+                    </div>
+                    <div class="item">
+                      <h4 id="sec-3"></h4>
+                      <p>Secs</p>
+                    </div>
+                   </div>
+                  <button>Book Ticket</button>
+                  <button>Watch Later</button>
+                </div>
+              </div>
+              <div class="details-2">
+                <div class="text">
+                  <h1>Legend FC<span>vs</span>Superstar FC</h1>
+                <h3>Time Table</h3>
+                </div>
+                <div class="row">
+                  <div class="col-lg-3">
+                    <div class="item">
+                      <h4 id="day-6"></h4>
+                      <p>Days</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="item">
+                      <h4 id="hour-6"></h4>
+                      <p>Hours</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="item">
+                      <h4 id="min-6"></h4>
+                      <p>Mins</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="item">
+                      <h4 id="sec-6"></h4>
+                      <p>Secs</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="bn">
+                <button>Book Ticket</button>
+                <button>Watch Later</button>
+                </div>
+              </div>
+            </div>
+              <div class="img">
+                <img class="player" src="images/banner-player.png" alt="banner-player.png">
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev btn" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <i class="fas fa-long-arrow-alt-left"></i>
+          </button>
+          <button class="carousel-control-next btn" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <i class="fas fa-long-arrow-alt-right right"></i>
+          </button>
+        </div>
+      </section>
+
+      <!-- ======================
+            banner-part-end
+      =========================== -->
+
+      <!-- ======================
+           schedule-part-start
+      =========================== -->
+
+      <section id="schedule">
+        <div class="container">
+          <div class="title">
+            <h1>Tournament Schedule</h1>
+            <img src="images/football.png" alt="football.png">
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+               <h2>Last Matches</h2>
+               <div class="row">
+                 <div class="col-lg-4 col-sm-4">
+                   <div class="details">
+                    <h3>Date</h3>
+                    <ul>
+                      <li>26 October 2016</li>
+                      <li>03 January 2017</li>
+                      <li>14 January 2017</li>
+                      <li>13 February 2017</li>
+                      <li>02 March 2017</li>
+                      <li>14 April 2017</li>
+                    </ul>
+                   </div>
+                 </div>
+                 <div class="col-lg-2 col-sm-3">
+                  <div class="details-2">
+                    <h3>Time</h3>
+                  <ul>
+                    <li>11:00 P.M</li>
+                    <li>08:00 P.M</li>
+                    <li>10:00 P.M</li>
+                    <li>07:00 P.M</li>
+                    <li>12:00 P.M</li>
+                    <li>01:00 P.M</li>
+                  </ul>
+                  </div>
+                 </div>
+                 <div class="col-lg-6 col-sm-5">
+                  <div class="details-3">
+                    <h3>Teams</h3>
+                  <ul>
+                    <li>Black Dragon v/s Royal Dragon</li>
+                    <li>Red Champion v/s Black Dragon</li>
+                    <li>Royal Dragon v/s Bercelona</li>
+                    <li>Bercelona v/s Red Champion</li>
+                    <li>Black Dragon v/s Red Champion</li>
+                    <li>Bercelona v/s Royal dragon</li>
+                  </ul>
+                  </div>
+                 </div>
+               </div>
+            </div>
+            <div class="col-lg-6">
+              <h2>Next Matches</h2>
+              <div class="row">
+                <div class="col-lg-4 col-sm-4">
+                  <div class="details">
+                   <h3>Date</h3>
+                   <ul>
+                     <li>26 October 2016</li>
+                     <li>03 January 2017</li>
+                     <li>14 January 2017</li>
+                     <li>13 February 2017</li>
+                     <li>02 March 2017</li>
+                     <li>14 April 2017</li>
+                   </ul>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-sm-3">
+                 <div class="details-2">
+                   <h3>Time</h3>
+                 <ul>
+                   <li>11:00 P.M</li>
+                   <li>08:00 P.M</li>
+                   <li>10:00 P.M</li>
+                   <li>07:00 P.M</li>
+                   <li>12:00 P.M</li>
+                   <li>01:00 P.M</li>
+                 </ul>
+                 </div>
+                </div>
+                <div class="col-lg-6 col-sm-5">
+                 <div class="details-3">
+                   <h3>Teams</h3>
+                 <ul>
+                   <li>Black Dragon v/s Royal Dragon</li>
+                   <li>Red Champion v/s Black Dragon</li>
+                   <li>Royal Dragon v/s Bercelona</li>
+                   <li>Bercelona v/s Red Champion</li>
+                   <li>Black Dragon v/s Red Champion</li>
+                   <li>Bercelona v/s Royal dragon</li>
+                 </ul>
+                 </div>
+                </div>
+              </div>
+           </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================
+            schedule-part-end
+      =========================== -->
+
+      <!-- ======================
+            about-part-start
+      =========================== -->
+
+      <section id="about-part">
+        <div class="color"></div>
+        <div class="container">
+          <div class="title">
+            <h1>About Team & Trainers</h1>
+            <img src="images/football.png" alt="football.png">
+          </div>
+          <div class="about-slider">
+            <div class="about">
+              <div class="main">
+                <div class="details">
+                  <h4>Team of Barcelona</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetug elit, sed dood tempor incidt ut ore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiumod tempor incididunt.</p>
+                  <button>Read More</button>
+                </div>
+                <img class="players" src="images/about-player.png" alt="about-player">
+              </div>
+            </div>
+              <div class="about">
+                <div class="main">
+                  <div class="details">
+                    <h4>Team of Barcelona</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetug elit, sed dood tempor incidt ut ore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiumod tempor incididunt.</p>
+                    <button>Read More</button>
+                  </div>
+                  <img class="players" src="images/about-player.png" alt="about-player">
+                </div>
+              </div>
+              <div class="about">
+                <div class="main">
+                  <div class="details">
+                    <h4>Team of Barcelona</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetug elit, sed dood tempor incidt ut ore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiumod tempor incididunt.</p>
+                    <button>Read More</button>
+                  </div>
+                  <img class="players" src="images/about-player.png" alt="about-player">
+                </div>
+              </div>
+          </div>
+       </div>
+      </section>
+         
+      <section id="trainer">
+        <div class="color-right"></div>
+        <div class="container">
+          <div class="main">
+            <img class="coach" src="images/coach-img.png" alt="coach-img">
+          <div class="details">
+            <h4>Team of Barcelona</h4>
+            <p>Lorem ipsum dolor sit amet, consectetug elit, sed dood tempor incidt ut ore et domana aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur  sed do eiusmod tempor Amar sonar Bangla ami tomay Valobashi.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiumod tempor incidnt chirodin tomar akash tomar batash amar prane.</p>
+            <button>Read More</button>
+          </div>
+          </div>
+            <div class="stadium">
+              <img class="fild" src="images/stadium-img.png" alt="stadium-img">
+              <div class="overlay">
+                <div class="icon">
+                  <a class="my-video-links" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=6siTGYdntBE"><i class="fas fa-play play"></i></a>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- ======================
+             about-part-end
+      =========================== -->
+
+      <!-- ======================
+           popular-part-start
+      =========================== -->
+
+      <section id="popular-part">
+        <div class="container">
+          <div class="line">
+            <img src="images/line.png" alt="line.png">
+          </div>
+          <div class="title">
+            <h1>Our Popular Team</h1>
+            <img src="images/football.png" alt="football.png">
+          </div>
+          <div class="d-flex align-items-start all">
+            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <h3>Select A Team</h3>
+              <button class="nav-link active btn" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Black Dragon Sporting Club</button>
+              <button class="nav-link btn" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Red Champion Football Team</button>
+              <button class="nav-link btn" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Royal Dragon League</button>
+              <button class="nav-link btn" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Bercelona Champions</button>
+              <button class="nav-link btn" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">RAT Champion league</button>
+              <button class="nav-link btn" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Real Chester Sports Club</button>
+            </div>
+          
+            <div class="tab-content tab" id="v-pills-tabContent">
+              <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                <div class="main">
+                  <div class="popular-slider">
+                      <div class="team">
+                        <div class="round">
+                          <div class="small-round">
+                            <img src="images/popular-img-2.png" alt="popular-img-2">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="team">
+                        <div class="round">
+                          <div class="small-round">
+                            <img class="img-2" src="images/popular-img-1.png" alt="popular-img-1">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="team">
+                        <div class="round">
+                          <div class="small-round">
+                            <img class="img-3" src="images/popular-img-3.png" alt="popular-img-3">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="team">
+                        <div class="round">
+                          <div class="small-round">
+                            <img class="img-3" src="images/popular-img-3.png" alt="popular-img-2">
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="image-slider">
+                    <div class="details">
+                      <div class="main">
+                        <img class="pt-2" src="images/popular-img-2.png" alt="popular-img-1">
+                      <div class="player-detail">
+                        <ul>
+                          <li><span>Name</span>          : David Hunt</li>
+                          <li><span>Age</span>           : 32 Years</li>
+                          <li><span>Nationality</span>   : Germany</li>
+                          <li><span>Height</span>        : 6.1”</li>
+                          <li><span>Played Match</span>  : 60 Match</li>
+                          <li><span>Total Goal</span>    : 13 Goal</li>
+                          <li><span>Award Win</span>     : 6 Award</li>
+                          <li><span>Rank</span>          : 3rd Position</li>
+                          <li><span>Position</span>      : Defence</li>
+                        </ul>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="details">
+                      <div class="main">
+                        <img class="pt-3" src="images/popular-img-1.png" alt="popular-img-1">
+                      <div class="player-detail">
+                        <ul>
+                          <li><span>Name</span>          : David Hunt</li>
+                          <li><span>Age</span>           : 32 Years</li>
+                          <li><span>Nationality</span>   : Germany</li>
+                          <li><span>Height</span>        : 6.1”</li>
+                          <li><span>Played Match</span>  : 60 Match</li>
+                          <li><span>Total Goal</span>    : 13 Goal</li>
+                          <li><span>Award Win</span>     : 6 Award</li>
+                          <li><span>Rank</span>          : 3rd Position</li>
+                          <li><span>Position</span>      : Defence</li>
+                        </ul>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="details">
+                      <div class="main">
+                        <img class="pt-2" src="images/popular-img-3.png" alt="popular-img-1">
+                      <div class="player-detail">
+                        <ul>
+                          <li><span>Name</span>          : David Hunt</li>
+                          <li><span>Age</span>           : 32 Years</li>
+                          <li><span>Nationality</span>   : Germany</li>
+                          <li><span>Height</span>        : 6.1”</li>
+                          <li><span>Played Match</span>  : 60 Match</li>
+                          <li><span>Total Goal</span>    : 13 Goal</li>
+                          <li><span>Award Win</span>     : 6 Award</li>
+                          <li><span>Rank</span>          : 3rd Position</li>
+                          <li><span>Position</span>      : Defence</li>
+                        </ul>
+                      </div>
+                      </div>
+                  </div>
+                    <div class="details">
+                      <div class="main">
+                        <img class="pt-2" src="images/popular-img-3.png" alt="popular-img-1">
+                      <div class="player-detail">
+                        <ul>
+                          <li><span>Name</span>          : David Hunt</li>
+                          <li><span>Age</span>           : 32 Years</li>
+                          <li><span>Nationality</span>   : Germany</li>
+                          <li><span>Height</span>        : 6.1”</li>
+                          <li><span>Played Match</span>  : 60 Match</li>
+                          <li><span>Total Goal</span>    : 13 Goal</li>
+                          <li><span>Award Win</span>     : 6 Award</li>
+                          <li><span>Rank</span>          : 3rd Position</li>
+                          <li><span>Position</span>      : Defence</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <div class="tab-pane fade active" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                <div class="main">
+                  <div class="popular-slider">
+                      <div class="team">
+                        <div class="round">
+                          <div class="small-round">
+                            <img src="images/popular-img-2.png" alt="popular-img-2">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="team">
+                        <div class="round">
+                          <div class="small-round">
+                            <img class="img-2" src="images/popular-img-1.png" alt="popular-img-1">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="team">
+                        <div class="round">
+                          <div class="small-round">
+                            <img class="img-3" src="images/popular-img-3.png" alt="popular-img-3">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="team">
+                        <div class="round">
+                          <div class="small-round">
+                            <img class="img-3" src="images/popular-img-3.png" alt="popular-img-2">
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="image-slider">
+                    <div class="details">
+                      <div class="main">
+                        <img class="pt-2" src="images/popular-img-2.png" alt="popular-img-1">
+                      <div class="player-detail">
+                        <ul>
+                          <li><span>Name</span>          : David Hunt</li>
+                          <li><span>Age</span>           : 32 Years</li>
+                          <li><span>Nationality</span>   : Germany</li>
+                          <li><span>Height</span>        : 6.1”</li>
+                          <li><span>Played Match</span>  : 60 Match</li>
+                          <li><span>Total Goal</span>    : 13 Goal</li>
+                          <li><span>Award Win</span>     : 6 Award</li>
+                          <li><span>Rank</span>          : 3rd Position</li>
+                          <li><span>Position</span>      : Defence</li>
+                        </ul>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="details">
+                      <div class="main">
+                        <img class="pt-3" src="images/popular-img-1.png" alt="popular-img-1">
+                      <div class="player-detail">
+                        <ul>
+                          <li><span>Name</span>          : David Hunt</li>
+                          <li><span>Age</span>           : 32 Years</li>
+                          <li><span>Nationality</span>   : Germany</li>
+                          <li><span>Height</span>        : 6.1”</li>
+                          <li><span>Played Match</span>  : 60 Match</li>
+                          <li><span>Total Goal</span>    : 13 Goal</li>
+                          <li><span>Award Win</span>     : 6 Award</li>
+                          <li><span>Rank</span>          : 3rd Position</li>
+                          <li><span>Position</span>      : Defence</li>
+                        </ul>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="details">
+                      <div class="main">
+                        <img class="pt-2" src="images/popular-img-3.png" alt="popular-img-1">
+                      <div class="player-detail">
+                        <ul>
+                          <li><span>Name</span>          : David Hunt</li>
+                          <li><span>Age</span>           : 32 Years</li>
+                          <li><span>Nationality</span>   : Germany</li>
+                          <li><span>Height</span>        : 6.1”</li>
+                          <li><span>Played Match</span>  : 60 Match</li>
+                          <li><span>Total Goal</span>    : 13 Goal</li>
+                          <li><span>Award Win</span>     : 6 Award</li>
+                          <li><span>Rank</span>          : 3rd Position</li>
+                          <li><span>Position</span>      : Defence</li>
+                        </ul>
+                      </div>
+                      </div>
+                  </div>
+                    <div class="details">
+                      <div class="main">
+                        <img class="pt-2" src="images/popular-img-3.png" alt="popular-img-1">
+                      <div class="player-detail">
+                        <ul>
+                          <li><span>Name</span>          : David Hunt</li>
+                          <li><span>Age</span>           : 32 Years</li>
+                          <li><span>Nationality</span>   : Germany</li>
+                          <li><span>Height</span>        : 6.1”</li>
+                          <li><span>Played Match</span>  : 60 Match</li>
+                          <li><span>Total Goal</span>    : 13 Goal</li>
+                          <li><span>Award Win</span>     : 6 Award</li>
+                          <li><span>Rank</span>          : 3rd Position</li>
+                          <li><span>Position</span>      : Defence</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="tab-pane fade active" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                <div class="main">
+                  <div class="popular-slider">
+                      <div class="team">
+                        <div class="round">
+                          <div class="small-round">
+                            <img src="images/popular-img-2.png" alt="popular-img-2">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="team">
+                        <div class="round">
+                          <div class="small-round">
+                            <img class="img-2" src="images/popular-img-1.png" alt="popular-img-1">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="team">
+                        <div class="round">
+                          <div class="small-round">
+                            <img class="img-3" src="images/popular-img-3.png" alt="popular-img-3">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="team">
+                        <div class="round">
+                          <div class="small-round">
+                            <img class="img-3" src="images/popular-img-3.png" alt="popular-img-2">
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="image-slider">
+                    <div class="details">
+                      <div class="main">
+                        <img class="pt-2" src="images/popular-img-2.png" alt="popular-img-1">
+                      <div class="player-detail">
+                        <ul>
+                          <li><span>Name</span>          : David Hunt</li>
+                          <li><span>Age</span>           : 32 Years</li>
+                          <li><span>Nationality</span>   : Germany</li>
+                          <li><span>Height</span>        : 6.1”</li>
+                          <li><span>Played Match</span>  : 60 Match</li>
+                          <li><span>Total Goal</span>    : 13 Goal</li>
+                          <li><span>Award Win</span>     : 6 Award</li>
+                          <li><span>Rank</span>          : 3rd Position</li>
+                          <li><span>Position</span>      : Defence</li>
+                        </ul>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="details">
+                      <div class="main">
+                        <img class="pt-3" src="images/popular-img-1.png" alt="popular-img-1">
+                      <div class="player-detail">
+                        <ul>
+                          <li><span>Name</span>          : David Hunt</li>
+                          <li><span>Age</span>           : 32 Years</li>
+                          <li><span>Nationality</span>   : Germany</li>
+                          <li><span>Height</span>        : 6.1”</li>
+                          <li><span>Played Match</span>  : 60 Match</li>
+                          <li><span>Total Goal</span>    : 13 Goal</li>
+                          <li><span>Award Win</span>     : 6 Award</li>
+                          <li><span>Rank</span>          : 3rd Position</li>
+                          <li><span>Position</span>      : Defence</li>
+                        </ul>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="details">
+                      <div class="main">
+                        <img class="pt-2" src="images/popular-img-3.png" alt="popular-img-1">
+                      <div class="player-detail">
+                        <ul>
+                          <li><span>Name</span>          : David Hunt</li>
+                          <li><span>Age</span>           : 32 Years</li>
+                          <li><span>Nationality</span>   : Germany</li>
+                          <li><span>Height</span>        : 6.1”</li>
+                          <li><span>Played Match</span>  : 60 Match</li>
+                          <li><span>Total Goal</span>    : 13 Goal</li>
+                          <li><span>Award Win</span>     : 6 Award</li>
+                          <li><span>Rank</span>          : 3rd Position</li>
+                          <li><span>Position</span>      : Defence</li>
+                        </ul>
+                      </div>
+                      </div>
+                  </div>
+                    <div class="details">
+                      <div class="main">
+                        <img class="pt-2" src="images/popular-img-3.png" alt="popular-img-1">
+                      <div class="player-detail">
+                        <ul>
+                          <li><span>Name</span>          : David Hunt</li>
+                          <li><span>Age</span>           : 32 Years</li>
+                          <li><span>Nationality</span>   : Germany</li>
+                          <li><span>Height</span>        : 6.1”</li>
+                          <li><span>Played Match</span>  : 60 Match</li>
+                          <li><span>Total Goal</span>    : 13 Goal</li>
+                          <li><span>Award Win</span>     : 6 Award</li>
+                          <li><span>Rank</span>          : 3rd Position</li>
+                          <li><span>Position</span>      : Defence</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="tab-pane fade active" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                <div class="main">
+                  <div class="popular-slider">
+                      <div class="team">
+                        <div class="round">
+                          <div class="small-round">
+                            <img src="images/popular-img-2.png" alt="popular-img-2">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="team">
+                        <div class="round">
+                          <div class="small-round">
+                            <img class="img-2" src="images/popular-img-1.png" alt="popular-img-1">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="team">
+                        <div class="round">
+                          <div class="small-round">
+                            <img class="img-3" src="images/popular-img-3.png" alt="popular-img-3">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="team">
+                        <div class="round">
+                          <div class="small-round">
+                            <img class="img-3" src="images/popular-img-3.png" alt="popular-img-2">
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="image-slider">
+                    <div class="details">
+                      <div class="main">
+                        <img class="pt-2" src="images/popular-img-2.png" alt="popular-img-1">
+                      <div class="player-detail">
+                        <ul>
+                          <li><span>Name</span>          : David Hunt</li>
+                          <li><span>Age</span>           : 32 Years</li>
+                          <li><span>Nationality</span>   : Germany</li>
+                          <li><span>Height</span>        : 6.1”</li>
+                          <li><span>Played Match</span>  : 60 Match</li>
+                          <li><span>Total Goal</span>    : 13 Goal</li>
+                          <li><span>Award Win</span>     : 6 Award</li>
+                          <li><span>Rank</span>          : 3rd Position</li>
+                          <li><span>Position</span>      : Defence</li>
+                        </ul>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="details">
+                      <div class="main">
+                        <img class="pt-3" src="images/popular-img-1.png" alt="popular-img-1">
+                      <div class="player-detail">
+                        <ul>
+                          <li><span>Name</span>          : David Hunt</li>
+                          <li><span>Age</span>           : 32 Years</li>
+                          <li><span>Nationality</span>   : Germany</li>
+                          <li><span>Height</span>        : 6.1”</li>
+                          <li><span>Played Match</span>  : 60 Match</li>
+                          <li><span>Total Goal</span>    : 13 Goal</li>
+                          <li><span>Award Win</span>     : 6 Award</li>
+                          <li><span>Rank</span>          : 3rd Position</li>
+                          <li><span>Position</span>      : Defence</li>
+                        </ul>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="details">
+                      <div class="main">
+                        <img class="pt-2" src="images/popular-img-3.png" alt="popular-img-1">
+                      <div class="player-detail">
+                        <ul>
+                          <li><span>Name</span>          : David Hunt</li>
+                          <li><span>Age</span>           : 32 Years</li>
+                          <li><span>Nationality</span>   : Germany</li>
+                          <li><span>Height</span>        : 6.1”</li>
+                          <li><span>Played Match</span>  : 60 Match</li>
+                          <li><span>Total Goal</span>    : 13 Goal</li>
+                          <li><span>Award Win</span>     : 6 Award</li>
+                          <li><span>Rank</span>          : 3rd Position</li>
+                          <li><span>Position</span>      : Defence</li>
+                        </ul>
+                      </div>
+                      </div>
+                  </div>
+                    <div class="details">
+                      <div class="main">
+                        <img class="pt-2" src="images/popular-img-3.png" alt="popular-img-1">
+                      <div class="player-detail">
+                        <ul>
+                          <li><span>Name</span>          : David Hunt</li>
+                          <li><span>Age</span>           : 32 Years</li>
+                          <li><span>Nationality</span>   : Germany</li>
+                          <li><span>Height</span>        : 6.1”</li>
+                          <li><span>Played Match</span>  : 60 Match</li>
+                          <li><span>Total Goal</span>    : 13 Goal</li>
+                          <li><span>Award Win</span>     : 6 Award</li>
+                          <li><span>Rank</span>          : 3rd Position</li>
+                          <li><span>Position</span>      : Defence</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="tab-pane fade active" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                <div class="main">
+                  <div class="popular-slider">
+                      <div class="team">
+                        <div class="round">
+                          <div class="small-round">
+                            <img src="images/popular-img-2.png" alt="popular-img-2">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="team">
+                        <div class="round">
+                          <div class="small-round">
+                            <img class="img-2" src="images/popular-img-1.png" alt="popular-img-1">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="team">
+                        <div class="round">
+                          <div class="small-round">
+                            <img class="img-3" src="images/popular-img-3.png" alt="popular-img-3">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="team">
+                        <div class="round">
+                          <div class="small-round">
+                            <img class="img-3" src="images/popular-img-3.png" alt="popular-img-2">
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="image-slider">
+                    <div class="details">
+                      <div class="main">
+                        <img class="pt-2" src="images/popular-img-2.png" alt="popular-img-1">
+                      <div class="player-detail">
+                        <ul>
+                          <li><span>Name</span>          : David Hunt</li>
+                          <li><span>Age</span>           : 32 Years</li>
+                          <li><span>Nationality</span>   : Germany</li>
+                          <li><span>Height</span>        : 6.1”</li>
+                          <li><span>Played Match</span>  : 60 Match</li>
+                          <li><span>Total Goal</span>    : 13 Goal</li>
+                          <li><span>Award Win</span>     : 6 Award</li>
+                          <li><span>Rank</span>          : 3rd Position</li>
+                          <li><span>Position</span>      : Defence</li>
+                        </ul>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="details">
+                      <div class="main">
+                        <img class="pt-3" src="images/popular-img-1.png" alt="popular-img-1">
+                      <div class="player-detail">
+                        <ul>
+                          <li><span>Name</span>          : David Hunt</li>
+                          <li><span>Age</span>           : 32 Years</li>
+                          <li><span>Nationality</span>   : Germany</li>
+                          <li><span>Height</span>        : 6.1”</li>
+                          <li><span>Played Match</span>  : 60 Match</li>
+                          <li><span>Total Goal</span>    : 13 Goal</li>
+                          <li><span>Award Win</span>     : 6 Award</li>
+                          <li><span>Rank</span>          : 3rd Position</li>
+                          <li><span>Position</span>      : Defence</li>
+                        </ul>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="details">
+                      <div class="main">
+                        <img class="pt-2" src="images/popular-img-3.png" alt="popular-img-1">
+                      <div class="player-detail">
+                        <ul>
+                          <li><span>Name</span>          : David Hunt</li>
+                          <li><span>Age</span>           : 32 Years</li>
+                          <li><span>Nationality</span>   : Germany</li>
+                          <li><span>Height</span>        : 6.1”</li>
+                          <li><span>Played Match</span>  : 60 Match</li>
+                          <li><span>Total Goal</span>    : 13 Goal</li>
+                          <li><span>Award Win</span>     : 6 Award</li>
+                          <li><span>Rank</span>          : 3rd Position</li>
+                          <li><span>Position</span>      : Defence</li>
+                        </ul>
+                      </div>
+                      </div>
+                  </div>
+                    <div class="details">
+                      <div class="main">
+                        <img class="pt-2" src="images/popular-img-3.png" alt="popular-img-1">
+                      <div class="player-detail">
+                        <ul>
+                          <li><span>Name</span>          : David Hunt</li>
+                          <li><span>Age</span>           : 32 Years</li>
+                          <li><span>Nationality</span>   : Germany</li>
+                          <li><span>Height</span>        : 6.1”</li>
+                          <li><span>Played Match</span>  : 60 Match</li>
+                          <li><span>Total Goal</span>    : 13 Goal</li>
+                          <li><span>Award Win</span>     : 6 Award</li>
+                          <li><span>Rank</span>          : 3rd Position</li>
+                          <li><span>Position</span>      : Defence</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                <div class="main">
+                  <div class="popular-slider">
+                      <div class="team">
+                        <div class="round">
+                          <div class="small-round">
+                            <img src="images/popular-img-2.png" alt="popular-img-2">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="team">
+                        <div class="round">
+                          <div class="small-round">
+                            <img class="img-2" src="images/popular-img-1.png" alt="popular-img-1">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="team">
+                        <div class="round">
+                          <div class="small-round">
+                            <img class="img-3" src="images/popular-img-3.png" alt="popular-img-3">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="team">
+                        <div class="round">
+                          <div class="small-round">
+                            <img class="img-3" src="images/popular-img-3.png" alt="popular-img-2">
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="image-slider">
+                    <div class="details">
+                      <div class="main">
+                        <img class="pt-2" src="images/popular-img-2.png" alt="popular-img-1">
+                      <div class="player-detail">
+                        <ul>
+                          <li><span>Name</span>          : David Hunt</li>
+                          <li><span>Age</span>           : 32 Years</li>
+                          <li><span>Nationality</span>   : Germany</li>
+                          <li><span>Height</span>        : 6.1”</li>
+                          <li><span>Played Match</span>  : 60 Match</li>
+                          <li><span>Total Goal</span>    : 13 Goal</li>
+                          <li><span>Award Win</span>     : 6 Award</li>
+                          <li><span>Rank</span>          : 3rd Position</li>
+                          <li><span>Position</span>      : Defence</li>
+                        </ul>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="details">
+                      <div class="main">
+                        <img class="pt-3" src="images/popular-img-1.png" alt="popular-img-1">
+                      <div class="player-detail">
+                        <ul>
+                          <li><span>Name</span>          : David Hunt</li>
+                          <li><span>Age</span>           : 32 Years</li>
+                          <li><span>Nationality</span>   : Germany</li>
+                          <li><span>Height</span>        : 6.1”</li>
+                          <li><span>Played Match</span>  : 60 Match</li>
+                          <li><span>Total Goal</span>    : 13 Goal</li>
+                          <li><span>Award Win</span>     : 6 Award</li>
+                          <li><span>Rank</span>          : 3rd Position</li>
+                          <li><span>Position</span>      : Defence</li>
+                        </ul>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="details">
+                      <div class="main">
+                        <img class="pt-2" src="images/popular-img-3.png" alt="popular-img-1">
+                      <div class="player-detail">
+                        <ul>
+                          <li><span>Name</span>          : David Hunt</li>
+                          <li><span>Age</span>           : 32 Years</li>
+                          <li><span>Nationality</span>   : Germany</li>
+                          <li><span>Height</span>        : 6.1”</li>
+                          <li><span>Played Match</span>  : 60 Match</li>
+                          <li><span>Total Goal</span>    : 13 Goal</li>
+                          <li><span>Award Win</span>     : 6 Award</li>
+                          <li><span>Rank</span>          : 3rd Position</li>
+                          <li><span>Position</span>      : Defence</li>
+                        </ul>
+                      </div>
+                      </div>
+                  </div>
+                    <div class="details">
+                      <div class="main">
+                        <img class="pt-2" src="images/popular-img-3.png" alt="popular-img-1">
+                      <div class="player-detail">
+                        <ul>
+                          <li><span>Name</span>          : David Hunt</li>
+                          <li><span>Age</span>           : 32 Years</li>
+                          <li><span>Nationality</span>   : Germany</li>
+                          <li><span>Height</span>        : 6.1”</li>
+                          <li><span>Played Match</span>  : 60 Match</li>
+                          <li><span>Total Goal</span>    : 13 Goal</li>
+                          <li><span>Award Win</span>     : 6 Award</li>
+                          <li><span>Rank</span>          : 3rd Position</li>
+                          <li><span>Position</span>      : Defence</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================
+            popular-part-end
+      =========================== -->
+
+      <!-- ======================
+           products-part-start
+      =========================== -->
+
+      <section id="product-part">
+        <div class="container">
+          <div class="title">
+            <h1>Our Sports Products</h1>
+            <img src="images/football.png" alt="football.png">
+          </div>
+          <ul class="nav nav-pills" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active round" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">All</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">T-Shirts</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Pants</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Caps</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Balls</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Autograph</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link cap" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Cup</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+              <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="img">
+                      <img src="images/product-1.png" alt="product-1.png">
+                      <div class="overlay">
+                        <div class="icon">
+                          <i class="fas fa-link chin"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="details">
+                      <h3>Demo Product Name</h3>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <h3 class="price">Price: $ 32.25 / $ 28.25</h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                  <div class="img">
+                    <img class="photo" src="images/product-2.png" alt="product-2.png">
+                    <div class="overlay">
+                      <div class="icon">
+                        <i class="fas fa-link chin"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="details">
+                    <h3>Demo Product Name</h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                    <h3>Price: $ 18.00</h3>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                  <div class="img">
+                    <img src="images/product-3.png" alt="product-3.png">
+                    <div class="overlay">
+                      <div class="icon">
+                        <i class="fas fa-link chin"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="details">
+                    <h3>Demo Product Name</h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <h3>Price: $ 32.25</h3>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                  <div class="img">
+                    <img src="images/product-4.png" alt="product-4.png">
+                    <div class="overlay">
+                      <div class="icon">
+                        <i class="fas fa-link chin"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="details">
+                    <h3>Demo Product Name</h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <h3 class="price">Price: $ 32.25 / $ 28.25</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+              <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="img">
+                      <img src="images/product-1.png" alt="product-1.png">
+                      <div class="overlay">
+                        <div class="icon">
+                          <i class="fas fa-link chin"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="details">
+                      <h3>Demo Product Name</h3>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <h3 class="price">Price: $ 32.25 / $ 28.25</h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                  <div class="img">
+                    <img class="photo" src="images/product-2.png" alt="product-2.png">
+                    <div class="overlay">
+                      <div class="icon">
+                        <i class="fas fa-link chin"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="details">
+                    <h3>Demo Product Name</h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                    <h3>Price: $ 18.00</h3>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                  <div class="img">
+                    <img src="images/product-3.png" alt="product-3.png">
+                    <div class="overlay">
+                      <div class="icon">
+                        <i class="fas fa-link chin"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="details">
+                    <h3>Demo Product Name</h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <h3>Price: $ 32.25</h3>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                  <div class="img">
+                    <img src="images/product-4.png" alt="product-4.png">
+                    <div class="overlay">
+                      <div class="icon">
+                        <i class="fas fa-link chin"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="details">
+                    <h3>Demo Product Name</h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <h3 class="price">Price: $ 32.25 / $ 28.25</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+              <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="img">
+                      <img src="images/product-1.png" alt="product-1.png">
+                      <div class="overlay">
+                        <div class="icon">
+                          <i class="fas fa-link chin"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="details">
+                      <h3>Demo Product Name</h3>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <h3 class="price">Price: $ 32.25 / $ 28.25</h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                  <div class="img">
+                    <img class="photo" src="images/product-2.png" alt="product-2.png">
+                    <div class="overlay">
+                      <div class="icon">
+                        <i class="fas fa-link chin"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="details">
+                    <h3>Demo Product Name</h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                    <h3>Price: $ 18.00</h3>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                  <div class="img">
+                    <img src="images/product-3.png" alt="product-3.png">
+                    <div class="overlay">
+                      <div class="icon">
+                        <i class="fas fa-link chin"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="details">
+                    <h3>Demo Product Name</h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <h3>Price: $ 32.25</h3>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                  <div class="img">
+                    <img src="images/product-4.png" alt="product-4.png">
+                    <div class="overlay">
+                      <div class="icon">
+                        <i class="fas fa-link chin"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="details">
+                    <h3>Demo Product Name</h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <h3 class="price">Price: $ 32.25 / $ 28.25</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+              <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="img">
+                      <img src="images/product-1.png" alt="product-1.png">
+                      <div class="overlay">
+                        <div class="icon">
+                          <i class="fas fa-link chin"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="details">
+                      <h3>Demo Product Name</h3>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <h3 class="price">Price: $ 32.25 / $ 28.25</h3>
+                    </div>
+                </div>
+                <div class="photo" class="col-lg-3 col-sm-6">
+                  <div class="img">
+                    <img src="images/product-2.png" alt="product-2.png">
+                    <div class="overlay">
+                      <div class="icon">
+                        <i class="fas fa-link chin"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="details">
+                    <h3>Demo Product Name</h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                    <h3>Price: $ 18.00</h3>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                  <div class="img">
+                    <img src="images/product-3.png" alt="product-3.png">
+                    <div class="overlay">
+                      <div class="icon">
+                        <i class="fas fa-link chin"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="details">
+                    <h3>Demo Product Name</h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <h3>Price: $ 32.25</h3>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                  <div class="img">
+                    <img src="images/product-4.png" alt="product-4.png">
+                    <div class="overlay">
+                      <div class="icon">
+                        <i class="fas fa-link chin"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="details">
+                    <h3>Demo Product Name</h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <h3 class="price">Price: $ 32.25 / $ 28.25</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+              <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="img">
+                      <img src="images/product-1.png" alt="product-1.png">
+                      <div class="overlay">
+                        <div class="icon">
+                          <i class="fas fa-link chin"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="details">
+                      <h3>Demo Product Name</h3>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <h3 class="price">Price: $ 32.25 / $ 28.25</h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                  <div class="img">
+                    <img class="photo" src="images/product-2.png" alt="product-2.png">
+                    <div class="overlay">
+                      <div class="icon">
+                        <i class="fas fa-link chin"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="details">
+                    <h3>Demo Product Name</h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                    <h3>Price: $ 18.00</h3>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                  <div class="img">
+                    <img src="images/product-3.png" alt="product-3.png">
+                    <div class="overlay">
+                      <div class="icon">
+                        <i class="fas fa-link chin"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="details">
+                    <h3>Demo Product Name</h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <h3>Price: $ 32.25</h3>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                  <div class="img">
+                    <img src="images/product-4.png" alt="product-4.png">
+                    <div class="overlay">
+                      <div class="icon">
+                        <i class="fas fa-link chin"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="details">
+                    <h3>Demo Product Name</h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <h3 class="price">Price: $ 32.25 / $ 28.25</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+              <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="img">
+                      <img src="images/product-1.png" alt="product-1.png">
+                      <div class="overlay">
+                        <div class="icon">
+                          <i class="fas fa-link chin"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="details">
+                      <h3>Demo Product Name</h3>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <h3 class="price">Price: $ 32.25 / $ 28.25</h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                  <div class="img">
+                    <img class="photo" src="images/product-2.png" alt="product-2.png">
+                    <div class="overlay">
+                      <div class="icon">
+                        <i class="fas fa-link chin"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="details">
+                    <h3>Demo Product Name</h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                    <h3>Price: $ 18.00</h3>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                  <div class="img">
+                    <img src="images/product-3.png" alt="product-3.png">
+                    <div class="overlay">
+                      <div class="icon">
+                        <i class="fas fa-link chin"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="details">
+                    <h3>Demo Product Name</h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <h3>Price: $ 32.25</h3>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                  <div class="img">
+                    <img src="images/product-4.png" alt="product-4.png">
+                    <div class="overlay">
+                      <div class="icon">
+                        <i class="fas fa-link chin"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="details">
+                    <h3>Demo Product Name</h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <h3 class="price">Price: $ 32.25 / $ 28.25</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+              <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="img">
+                      <img src="images/product-1.png" alt="product-1.png">
+                      <div class="overlay">
+                        <div class="icon">
+                          <i class="fas fa-link chin"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="details">
+                      <h3>Demo Product Name</h3>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <h3 class="price">Price: $ 32.25 / $ 28.25</h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                  <div class="img">
+                    <img class="photo" src="images/product-2.png" alt="product-2.png">
+                    <div class="overlay">
+                      <div class="icon">
+                        <i class="fas fa-link chin"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="details">
+                    <h3>Demo Product Name</h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                    <h3>Price: $ 18.00</h3>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                  <div class="img">
+                    <img src="images/product-3.png" alt="product-3.png">
+                    <div class="overlay">
+                      <div class="icon">
+                        <i class="fas fa-link chin"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="details">
+                    <h3>Demo Product Name</h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <h3>Price: $ 32.25</h3>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                  <div class="img">
+                    <img src="images/product-4.png" alt="product-4.png">
+                    <div class="overlay">
+                      <div class="icon">
+                        <i class="fas fa-link chin"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="details">
+                    <h3>Demo Product Name</h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <h3 class="price">Price: $ 32.25 / $ 28.25</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn">View More</button>
+        </div>
+      </section>
+
+      <!-- ======================
+            popular-part-end
+      =========================== -->
+
+      <!-- ======================
+          testimonial-part-start
+      =========================== -->
+
+      <section id="testimonial">
+        <div class="overlay">
+          <div class="container">
+            <div class="title">
+              <h1>Our Testimonial</h1>
+              <img src="images/football.png" alt="football.png">
+            </div>
+              <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="testi">
+                      <div class="box">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim iam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esselum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>
+                        <img class="saing" src="images/signichar.png" alt="signichar.png">
+                      </div>
+                      <div class="details">
+                        <div class="round">
+                          <img class="player" src="images/popular-img-1.png" alt="popular-img-1.png">
+                        </div>
+                        <h2>David Hatson</h2>
+                        <div class="icon">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <h4>Chief Coach</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="testi">
+                      <div class="box">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim iam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esselum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>
+                        <img class="saing" src="images/signichar.png" alt="signichar.png">
+                      </div>
+                      <div class="details">
+                        <div class="round">
+                          <img class="player-2" src="images/popular-img-2.png" alt="popular-img-2.png">
+                        </div>
+                        <h2>Ruhul-Play</h2>
+                        <div class="icon">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <h4>Chief Coach</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="testi">
+                      <div class="box">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim iam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esselum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>
+                        <img class="saing" src="images/signichar.png" alt="signichar.png">
+                      </div>
+                      <div class="details">
+                        <div class="round">
+                          <img class="player-3" src="images/popular-img-3.png" alt="popular-img-3.png">
+                        </div>
+                        <h2>Tashan-singer</h2>
+                        <div class="icon">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <h4>Chief Coach</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================
+          testimonial-part-end
+      =========================== -->
+
+      <!-- ======================
+            news-part-start
+      =========================== -->
+
+      <section id="news-part">
+        <div class="container">
+          <div class="title">
+            <h1>Our Latest News</h1>
+            <img src="images/football.png" alt="football.png">
+          </div>
+          <div class="news-slider">
+            <div class="news">
+              <div class="main">
+                <div class="img">
+                 <img src="images/news-img.jpg" alt="news-img.png">
+                 <div class="overlay">
+                   <h4>Read more <i class="fa-solid fa-right-long"></i></i></h4>
+                 </div>
+               <div class="details">
+                 <h2>Best Match was Played <br> Yesterday</h2>
+                 <p>Lorem ipsum dolor sit amet, conser adipisicing elit, sed do eiusmod por incididunt ut labore et dolore magnt enim ad minim veniam.</p>
+                 <div class="icon">
+                   <div class="main">
+                     <i class="fa-solid fa-user"></i>
+                     <h6>Posted by: Admin</h6>
+                     <i class="fa-regular fa-calendar-days c"></i>
+                     <h6>26 Oct 2017</h6>
+                   </div>
+                 </div>
+               </div>
+             </div>
+            <div class="img">
+                 <img src="images/news-img-2.png" alt="news-img.png">
+                 <div class="overlay">
+                   <h4>Read more <i class="fa-solid fa-right-long"></i></h4>
+                 </div>
+               <div class="details">
+                 <h2>We were very Excited <br> for Played</h2>
+                 <p>Lorem ipsum dolor sit amet, conser adipisicing elit, sed do eiusmod por incididunt ut labore et dolore magnt enim ad minim veniam.</p>
+                 <div class="icon">
+                   <div class="main">
+                     <i class="fa-solid fa-user"></i>
+                     <h6>Posted by: Admin</h6>
+                     <i class="fa-regular fa-calendar-days c"></i>
+                     <h6>26 Oct 2017</h6>
+                   </div>
+                 </div>
+               </div>
+           </div>
+            </div>
+            </div>
+            <div class="news">
+              <div class="main">
+                <div class="img">
+                 <img src="images/news-img-3.jpg" alt="news-img.png">
+                 <div class="overlay">
+                   <h4>Read more <i class="fa-solid fa-arrow-right-long"></i></h4>
+                 </div>
+               <div class="details">
+                 <h2>Best Match was Played <br> Yesterday</h2>
+                 <p>Lorem ipsum dolor sit amet, conser adipisicing elit, sed do eiusmod por incididunt ut labore et dolore magnt enim ad minim veniam.</p>
+                 <div class="icon">
+                   <div class="main">
+                     <i class="fa-solid fa-user"></i>
+                     <h6>Posted by: Admin</h6>
+                     <i class="fa-regular fa-calendar-days c"></i>
+                     <h6>26 Oct 2017</h6>
+                   </div>
+                 </div>
+               </div>
+             </div>
+            <div class="img">
+                 <img src="images/news-img-2.png" alt="news-img.png">
+                 <div class="overlay">
+                   <h4>Read more <i class="fa-solid fa-arrow-right-long"></i></h4>
+                 </div>
+               <div class="details">
+                 <h2>We were very Excited <br> for Played</h2>
+                 <p>Lorem ipsum dolor sit amet, conser adipisicing elit, sed do eiusmod por incididunt ut labore et dolore magnt enim ad minim veniam.</p>
+                 <div class="icon">
+                   <div class="main">
+                     <i class="fa-solid fa-user"></i>
+                     <h6>Posted by: Admin</h6>
+                     <i class="fa-regular fa-calendar-days c"></i>
+                     <h6>26 Oct 2017</h6>
+                   </div>
+                 </div>
+               </div>
+           </div>
+           </div>
+            </div>
+            <div class="news">
+              <div class="main">
+                <div class="img">     
+                 <img src="images/news-img.jpg" alt="news-img.png">
+                 <div class="overlay">
+                   <h4>Read more <i class="fa-solid fa-arrow-right-long"></i></h4>
+                 </div>
+               <div class="details">
+                 <h2>Best Match was Played <br> Yesterday</h2>
+                 <p>Lorem ipsum dolor sit amet, conser adipisicing elit, sed do eiusmod por incididunt ut labore et dolore magnt enim ad minim veniam.</p>
+                 <div class="icon">
+                   <div class="main">
+                     <i class="fa-solid fa-user"></i>
+                     <h6>Posted by: Admin</h6>
+                     <i class="fa-regular fa-calendar-days c"></i>
+                     <h6>26 Oct 2017</h6>
+                   </div>
+                 </div>
+               </div>
+             </div>
+            <div class="img">
+                 <img src="images/news-img-4.jpg" alt="news-img.png">
+                 <div class="overlay">
+                   <h4>Read more <i class="fa-solid fa-arrow-right-long"></i></h4>
+                 </div>
+               <div class="details">
+                 <h2>We were very Excited <br> for Played</h2>
+                 <p>Lorem ipsum dolor sit amet, conser adipisicing elit, sed do eiusmod por incididunt ut labore et dolore magnt enim ad minim veniam.</p>
+                 <div class="icon">
+                   <div class="main">
+                     <i class="fa-solid fa-user"></i>
+                     <h6>Posted by: Admin</h6>
+                     <i class="fa-regular fa-calendar-days c"></i>
+                     <h6>26 Oct 2017</h6>
+                   </div>
+                 </div>
+               </div>
+           </div>
+            </div>
+            </div>
+            <div class="news">
+              <div class="main">
+                <div class="img">     
+                 <img src="images/news-img-2.png" alt="news-img.png">
+                 <div class="overlay">
+                   <h4>Read more <i class="fa-solid fa-arrow-right-long"></i></h4>
+                 </div>
+               <div class="details">
+                 <h2>Best Match was Played <br> Yesterday</h2>
+                 <p>Lorem ipsum dolor sit amet, conser adipisicing elit, sed do eiusmod por incididunt ut labore et dolore magnt enim ad minim veniam.</p>
+                 <div class="icon">
+                   <div class="main">
+                     <i class="fa-solid fa-user"></i>
+                     <h6>Posted by: Admin</h6>
+                     <i class="fa-regular fa-calendar-days c"></i>
+                     <h6>26 Oct 2017</h6>
+                   </div>
+                 </div>
+               </div>
+             </div>
+            <div class="img">
+                 <img src="images/news-img-3.jpg" alt="news-img.png">
+                 <div class="overlay">
+                   <h4>Read more <i class="fa-solid fa-arrow-right-long"></i></h4>
+                 </div>
+               <div class="details">
+                 <h2>We were very Excited <br> for Played</h2>
+                 <p>Lorem ipsum dolor sit amet, conser adipisicing elit, sed do eiusmod por incididunt ut labore et dolore magnt enim ad minim veniam.</p>
+                 <div class="icon">
+                   <div class="main">
+                     <i class="fa-solid fa-user"></i>
+                     <h6>Posted by: Admin</h6>
+                     <i class="fa-regular fa-calendar-days c"></i>
+                     <h6>26 Oct 2017</h6>
+                   </div>
+                 </div>
+               </div>
+           </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ======================
+              news-part-end
+      =========================== -->
+
+      <!-- ======================
+            footer-part-start
+      =========================== -->
+
+      <footer>
+        <div class="img">
+          <img src="images/footer-img.png" alt="footer-img.png">
+        <div class="overlay"></div>
+      </div>
+        <div class="container">
+          <div class="box">
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="logo">
+                  <img class="brand" src="images/footer-logo.png" alt="">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempornt  ad minim veniam Lorem.</p>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="contact">
+                  <h3>Contact us</h3>
+                  <div class="details">
+                    <div class="main">
+                      <i class="fa-solid fa-phone"></i>
+                      <h2>(+38) 01234 65789 <br> (+35) 98567 32154</h2>
+                    </div>
+                  </div>
+                  <div class="details">
+                    <div class="main">
+                      <i class="fa-solid fa-envelope"></i>
+                      <h2>tournament@sports.com <br> sports@tournament.com</h2>
+                    </div>
+                  </div>
+                  <div class="details">
+                    <div class="main">
+                      <i class="fa-solid fa-earth-americas"></i>
+                      <h2>www.tournamentinfo.com <br> www.informationtour.com</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="link">
+                  <h3>Important links</h3>
+                  <ul>
+                    <li>Home </li>
+                    <li>About us</li>
+                    <li>Testimonial</li>
+                    <li>Team</li>
+                    <li>Blog</li>
+                    <span>
+                    <li>Video</li>
+                    <li>Schedule</li>
+                    <li>Contact</li>
+                    </span>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="post">
+                  <h3>Recent Posts</h3>
+                    <div class="small">
+                      <img src="images/footer-img-2.png" alt="footer-img-2">
+                      <div class="overlay-2">
+                        <div class="icon">
+                          <i class="fa-solid fa-link"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="text">
+                    <h2>We Watched Last Match</h2>
+                    <div class="main">
+                      <i class="fa-regular fa-calendar-days day"></i>
+                    <p class="date">26 Oct 2017</p>
+                    </div>
+                    <div class="main">
+                      <i class="fa-solid fa-thumbs-up like"></i>
+                      <p class="count">2.3k</p>
+                      <i class="fa-solid fa-comments like"></i>
+                      <p class="count">1.3k</p>
+                    </div>
+                  </div>
+                  <div class="small">
+                    <img src="images/footer-img-3.png" alt="footer-img-3">
+                    <div class="overlay-2">
+                      <div class="icon">
+                        <i class="fa-solid fa-link"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text two">
+                  <h2>We Watched Last Match</h2>
+                  <div class="main">
+                    <i class="fa-regular fa-calendar-days day"></i>
+                  <p class="date">26 Oct 2017</p>
+                  </div>
+                  <div class="main">
+                    <i class="fa-solid fa-thumbs-up like"></i>
+                    <p class="count">2.3k</p>
+                    <i class="fa-solid fa-comments like"></i>
+                    <p class="count">1.3k</p>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         </div>
+    </footer>
+
+      <!-- ======================
+            footer-part-end
+      =========================== -->
+
+      <!-- ======================
+            copy-part-start
+      =========================== -->
+      <section id="copy-part">
+        <div class="container">
+          <p>Copyright 2017 Themesitem<span>|</span>All Rights Reserved<span>|</span>Designed By Sujan</p>
+        </div>
+      </section>
+
+      <div class="topper">
+        <img src="images/tooper.gif" alt="tooper.gif">
+      </div>
+
+      <!-- ======================
+             copy-part-end
+      =========================== -->
+    
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/venobox.min.js"></script>
+    <script src="https://kit.fontawesome.com/02e8cf2e1c.js" crossorigin="anonymous"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/sidebar.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

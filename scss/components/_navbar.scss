@@ -1,0 +1,88 @@
+nav{
+    width: 100%;
+    position: absolute;
+    top: 120px;
+    left: 0;
+    .navbar-brand{
+       img{
+        position: absolute;
+        top: -90px;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 5;
+       }
+    }
+    .navbar-collapse{
+        margin-left: 210px;
+    }
+    .me-auto{
+        margin-right: 300px !important;
+    }
+    ul{
+        position: relative;
+        z-index: 5;
+        
+        li{
+            @include fontdetails(16px,500);
+            .nav-link{
+                color: #fff !important;
+                position: relative;
+                transition: .4s;
+                &::after{
+                    width: 0%;
+                    height: 2px;
+                    background: $primarycolor;
+                    position: absolute;
+                    top: 40px;
+                    left: 6px;
+                    content: "";
+                    transition: .4s;
+                }
+            }
+            
+            &:hover .nav-link{
+                color: $primarycolor !important;
+            }
+            &:hover .nav-link::after{
+                width: 82%;
+            }
+        }
+    }
+    li{
+        position: relative;
+        z-index: 5;
+        cursor: pointer;
+        .nav-link{
+            @include fontdetails(16px,500);
+            color: $commoncolor !important;
+            &::after{
+                width: 0%;
+                height: 2px;
+                background: #fff;
+                position: absolute;
+                top: 40px;
+                left: 15px;
+                content: "";
+                transition: .4s;
+            }
+        }
+        &:hover .nav-link{
+            color: #fff !important;
+            opacity: .7;
+        }
+        &:hover .nav-link::after{
+            width: 65%;
+        }
+    }
+    .add{
+        position: relative;
+        z-index: 5;
+        i{
+            margin: 5px 7px;
+            color: $commoncolor;
+        }
+        h5{
+            color: $commoncolor;
+        }
+    }
+}

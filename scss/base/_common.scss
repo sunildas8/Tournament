@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.main{
+    display: flex;
+}
+
+.title{
+    text-align: center;
+    position: relative;
+    margin: 100px 0;
+}
+
+.title h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #222222;
+}
+
+.title h1::after{
+    width: 10%;
+    height: 2px;
+    background: #dddddd;
+    position: absolute;
+    top: 80px;
+    left: 37%;
+    content: "";
+}
+
+.title h1::before{
+    width: 10%;
+    height: 2px;
+    background: #dddddd;
+    position: absolute;
+    top: 80px;
+    right: 37%;
+    content: "";
+}

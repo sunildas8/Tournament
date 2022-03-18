@@ -1,0 +1,156 @@
+footer{
+    width: 100%;
+    height: 375px;
+    position: relative;
+    -webkit-box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.2);
+    .img{
+        position: relative;
+        img{
+            width: 40%;
+            height: 500px;
+            clip-path: polygon(0 15%, 98% 15%, 85% 90%, 0 90%);
+            margin-top: -75px;
+        }
+        .overlay{
+            width: 40%;
+            height: 118%;
+            background: rgba(249, 206, 12, 0.75);
+            position: absolute;
+            top: -77px;
+            left: 0px;
+            clip-path: polygon(0 15%, 98% 15%, 85% 90%, 0 90%);
+            
+        }
+    }
+    .box{
+        position: absolute;
+        top: 60px;
+        .brand{
+            margin-left: 18px;
+        }
+        p{
+            width: 93%;
+            @include fontdetails-two(14px,400);
+            color: $othercolor;
+            text-align: center;
+            line-height: 24px;
+            margin-top: 25px;
+        }
+       .contact{
+           margin-left: 80px;
+       }
+       .link{
+           width: 60%;
+           margin-left: 55px;
+       }
+       .post{
+           margin-left: -80px;
+       }
+    h3{
+        @include fontdetails-three(24px,500);
+        color: $commoncolor;
+    }
+    .details{
+        margin: 12px 0;
+        i{
+            font-size: 32px;
+            color: $othercolor;
+            margin-right: 20px;
+            margin-top: 15px;
+        }
+        h2{
+            @include fontdetails-two(16px,400);
+            color: $othercolor;
+            margin-top: 0;
+            line-height: 30px;
+        }
+       }
+       ul{
+           padding-left: 0;
+           li{
+               @include fontdetails-two(16x,400);
+               color: $othercolor;
+               line-height: 46px;
+               cursor: pointer;
+               transition: .4s;
+               &:hover{
+                   color: $primarycolor;
+               }
+           }
+           span{
+            position: absolute;
+            top: 32px;
+            margin-left: 110px;
+        }
+       }
+       .small{
+            position: relative;
+            margin-top: 28px;
+           .overlay-2{
+                width: 17%;
+                height: 85%;
+                background: rgba(0, 0, 0, 0.6);
+                border: 1px solid $primarycolor;
+                position: absolute;
+                top: 6px;
+                left: 6px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transform: scale(0);
+                transition: .4s;
+            .icon{
+                width: 25px;
+                height: 25px;
+                background: $primarycolor;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 25px;
+                cursor: pointer;
+            }
+          }
+          &:hover .overlay-2{
+            transform: scale(1);
+        }
+       }
+       .text{
+           position: absolute;
+           top: 48px;
+           right: 112px;
+        h2{
+            @include fontdetails-two(16px,500);
+            color: $othercolor;
+        }
+        .day{
+            font-size: 18px;
+            color: $sevencolor;
+            margin-top: 15px;
+        }
+        .date{
+            @include fontdetails-two(16px,400);
+            color: $sevencolor;
+            width: 65%;
+            margin: 10px 0;
+            font-style: italic;
+        }
+        .like{
+            font-size: 16px;
+            color: $sevencolor;
+        }
+        .count{
+            width: 25%;
+            margin-top: -4px;
+            @include fontdetails-two(16px,400);
+            color: $sevencolor;
+            font-style: italic;
+            margin-right: 15px;
+        }
+       }
+       .two{
+        top: 155px;
+       }
+    }
+}
+

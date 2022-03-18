@@ -1,0 +1,145 @@
+#banner-part{
+    margin-top: -56px;
+    .carousel-inner{
+        overflow: visible;
+    }
+    .ground{
+        position: relative;
+        img{
+            width: 100%;
+            position: relative;
+            z-index: -1;
+        }
+        .overlay{
+            width: 60%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+        }
+        .overlay-2{
+            width: 55%;
+            height: 100%;
+            background: rgba(238, 197, 13, 0.6);
+            position: absolute;
+            top: 0;
+            right: 0;
+            clip-path: polygon(27% 0, 100% 0, 100% 100%, 0% 100%);
+            .details{
+                margin-top: 230px;
+                margin-left: 235px;
+                h1{
+                    @include fontdetails(40px,700);
+                    color: $commoncolor;
+                    margin-left: 20px;
+                    span{
+                        margin: 0 30px;
+                    }
+                }
+                h3{
+                    @include fontdetails(24px,700);
+                    color: $commoncolor;
+                    margin-top: 70px;
+                    margin-left: 400px;
+                }
+                .item{
+                    margin-left: 60px;
+                    margin-right: -29px;
+                    margin-top: 10px;
+                    text-align: center;
+                    border: 1px solid #fff;
+                    padding: 10px 20px;
+                    border-radius: 10px;
+                    h4{
+                        @include fontdetails(24px,500);
+                        color: $commoncolor;
+                        margin-bottom: 0;
+                    }
+                    p{
+                        @include fontdetails(24px,500);
+                        color: $commoncolor;
+                        margin-bottom: 0;
+                    }
+                }
+                button{
+                    @include fontdetails(16px,400);
+                    border: 1px solid $commoncolor;
+                    background: transparent;
+                    margin-left: 250px;
+                    margin-right: -235px;
+                    margin-top: 45px;
+                    padding: 8px 25px;
+                    border-radius: 5px;
+                    transition: .4s;
+                    &:hover{
+                        background: #fff;
+                        border-color: #fff;
+                    }
+                }
+            }
+        }
+        .details-2{
+            display: none;
+        }
+    }
+    .img{
+        .player{
+            position: absolute;
+            top: 245px;
+            left: 50%;
+            width: 35%;
+            transform: translate(-50%);
+            margin-left: -120px;
+            z-index: 5;
+        }
+    }
+    .btn{
+        opacity: 1;
+        outline: 0;
+        &:focus{
+            box-shadow: none;
+        }
+        i{
+            font-size: 30px;
+            color: #fff;
+            margin-left: -100px;
+            position: relative;
+            transition: .4s;
+            &::after{
+                width: 35px;
+                height: 35px;
+                border: 1px solid #fff;
+                background: transparent;
+                border-radius: 50%;
+                position: absolute;
+                top: -3px;
+                left: -15px;
+                content: "";
+                transition: .4s;
+                z-index: -1;
+            }
+            &:hover{
+                color: #444444;
+            }
+            &:hover:after{
+                background: #fff;
+            }
+        }
+        .right{
+            position: relative;
+            margin-left: 100px;
+            &::after{
+                width: 35px;
+                height: 35px;
+                border: 1px solid #fff;
+                border-radius: 50%;
+                position: absolute;
+                top: -3px;
+                left: -22px;
+                content: "";
+            }
+        }
+    }  
+}

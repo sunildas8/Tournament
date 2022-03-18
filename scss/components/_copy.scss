@@ -1,0 +1,23 @@
+#copy-part{
+    text-align: center;
+    p{
+        @include fontdetails-two(16px,400);
+        color: $sevencolor;
+        margin: 12px 0;
+        span{
+            margin: 0 10px;
+        }
+    }
+}
+
+
+.topper{
+    position: fixed;
+    bottom: 100px;
+    right: 0;
+    z-index: 9999;
+    display: none;
+    img{
+        width: 300px;
+    }
+}

@@ -1,0 +1,183 @@
+#popular-part{
+    position: relative;
+    .all{
+        margin-left: 50px;
+    }
+    .line{
+        position: absolute;
+        top: 238px;
+        transform: translate(-100%);
+        margin-left: 550px;
+        img{
+            width: 1px;
+            height: 440px;
+        }
+    }
+    h3{
+        @include fontdetails(20px,600);
+        background: $primarycolor;
+        border: 1px solid $dcolor;
+        text-align: center;
+        padding: 20px 80px;
+        margin-bottom: 0;
+        color: $othercolor;
+    }
+    .btn{
+        @include fontdetails-two(14px,400);
+        background: transparent;
+        border: 1px solid $dcolor;
+        border-radius: 0;
+        text-align: center;
+        padding: 20px 60px;
+        margin-bottom: 0;
+        color: $othercolor;
+        transition: .4s;
+        &:hover{
+            color: $primarycolor;
+        }
+    }
+  .popular-slider{
+        width: 20%;
+        .slick-slide{
+            height: 105px ;
+            }
+        .team{
+            margin: 20px 108px;
+            .round{
+                .small-round{
+                    width: 90px;
+                    height: 90px;
+                    border: 1px solid $primarycolor;
+                    border-radius: 50%;
+                    background: #fff;
+                    overflow: hidden;
+                    position: relative;
+                    transition: .4s;
+                    img{
+                        position: absolute;
+                        top: -2px;
+                        left: -68px;
+                    }
+                    .img-2{
+                        position: absolute;
+                        top: 13px;
+                        left: -25px;
+                        width: 150%;
+                    }
+                    .img-3{
+                        position: absolute;
+                        top: -15px;
+                        left: -86px;
+                    }
+                }
+            } 
+        }
+        .prev{
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+            border: 1px solid $commoncolor;
+            border-radius: 50%;
+            line-height: 40px;
+            text-align: center;
+            color: $othercolor;
+            cursor: pointer;
+            margin-left: 135px;
+            margin-top: -10px;
+            transition: .4s;
+            &:hover{
+                background: $primarycolor;
+                border-color: $primarycolor;
+                color: $othercolor;
+            } 
+        }
+        .next{
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+            border: 1px solid $commoncolor;
+            border-radius: 50%;
+            line-height: 40px;
+            text-align: center;
+            color: $othercolor;
+            cursor: pointer;
+            margin-left: 135px;
+            margin-top: 4px;
+            transition: .4s;
+            &:hover{
+                background: $primarycolor;
+                border-color: $primarycolor;
+                color: $othercolor;
+            } 
+        }
+        .slick-center{
+            margin-left: 100px;
+            .round{
+                width: 105px;
+                height: 105px;
+                background: #fff;
+                border: 1px solid $primarycolor;
+                border-radius: 50%;
+                padding: 6px;
+                position: relative;
+                &:after{
+                    width: 25px;
+                    height: 25px;
+                    background: #fff;
+                    border-right: 1px solid $primarycolor;
+                    border-top: 1px solid $primarycolor;
+                    border-top-right-radius: 5px;
+                    position: absolute;
+                    top: 40%;
+                    right: -10px;
+                    content: "";
+                    transform: rotate(45deg);
+                }
+                .small-round{
+                    background: $primarycolor;
+                    position: relative;
+                    z-index: 1;
+                }
+            }
+        }
+    }
+  .image-slider{
+      width: 54%;
+       padding-top: 30px;
+        .details{
+            width: 620px;
+            .pt-2{
+                margin-left: -50px;
+            }
+            .pt-3{
+                padding-right: 60px;
+                margin-top: -2px;
+                padding-top: 0 !important;
+            }
+            .player-detail{
+                margin-left: 40px;
+                ul{
+                    width: 210%;
+                    li{
+                        @include fontdetails(20px,500);
+                        color: $othercolor;
+                        line-height: 48px;
+                        padding-left: 150px;
+                        opacity: .9;
+                        position: relative;
+                        span{
+                            display: inline-block;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .tab{
+        position: absolute;
+        margin-left: 344px;
+    }
+}

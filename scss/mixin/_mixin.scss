@@ -1,0 +1,23 @@
+@mixin divsize ($w,$h,$bg) {
+    width: $w;
+    height: $h;
+    background: $bg;
+}
+
+@mixin fontdetails ($size,$weight) {
+    font-family: 'Oswald', sans-serif;
+    font-size: $size;
+    font-weight: $weight;
+}
+
+@mixin fontdetails-two ($size,$weight) {
+    font-family: 'Open Sans', sans-serif;
+    font-size: $size;
+    font-weight: $weight;
+}
+
+@mixin fontdetails-three ($size,$weight) {
+    font-family: 'Raleway', sans-serif;
+    font-size: $size;
+    font-weight: $weight;
+}

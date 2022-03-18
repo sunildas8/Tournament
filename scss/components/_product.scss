@@ -1,0 +1,113 @@
+#product-part{
+    ul{
+        margin: 30px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 5;
+    }
+    .nav-link{
+        @include fontdetails(16px,600);
+        background: transparent;
+        color: $commoncolor;
+        border: 1px solid $dcolor;
+        border-radius: 0;
+        margin: 0 3px;
+        padding: 5px 22px;
+        transition: .4s;
+        &:hover{
+            background: $primarycolor;
+            border-color: $primarycolor;
+        }
+    }
+    .round{
+        border-bottom-left-radius: 25px;
+        border-top-left-radius: 25px;
+    }
+    .cap{
+        border-bottom-right-radius: 25px;
+        border-top-right-radius: 25px;
+    }
+    .img{
+        width: 270px;
+        height: 320px;
+        background: #fff8ec;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        position: relative;
+        .overlay{
+            width: 90%;
+            height: 90%;
+            background: rgba(0,0,0,.7);
+            border: 8px solid #ffeaae;
+            position: absolute;
+            transform: scale(0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: .4s;
+            .icon{
+                width: 40px;
+                height: 40px;
+                background: $primarycolor;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 40px;
+                cursor: pointer;
+                .chin{
+                    font-size: 18px;
+                }
+            }
+        }
+        &:hover .overlay{
+            transform: scale(1);
+        }
+    }
+    .details{
+        text-align: center;
+        position: relative;
+        z-index: 5;
+        h3{
+            @include fontdetails-three(18px,500);
+            color: $commoncolor;
+            margin: 15px 0;
+        }
+        .price{
+            @include fontdetails-three(18px,500);
+            color: $commoncolor;
+            margin: 15px 0;
+            position: relative;
+            &:after{
+                width: 18%;
+                height: 2px;
+                background: $commoncolor;
+                position: absolute;
+                top: 12px;
+                left: 37%;
+                content: "";
+            }
+        }
+        i{
+            color: $primarycolor;
+            margin-right: 2px;
+        }
+    }
+    .btn{
+        @include fontdetails-three(16px,500);
+        color: $othercolor;
+        background: $primarycolor;
+        border-radius: 10px;
+        padding: 15px 20px;
+        margin: 0 auto;
+        margin-top: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 5;
+    }
+}
+

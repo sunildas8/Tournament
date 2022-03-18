@@ -1,0 +1,138 @@
+#news-part{
+    position: relative;
+    .title h1::after{
+        width: 7%;
+        left: 40%;
+    }
+    .title h1::before{
+        width: 7%;
+        right: 40%;
+    }
+    .img{
+        width: 115%;
+        margin-bottom: 200px;
+        position: relative;
+        overflow: hidden;
+        img{
+            clip-path: polygon(15% 0%, 100% 0px, 80% 100%, 15% 100%);
+        }
+        .overlay{
+            width: 73%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            position: absolute;
+            top: 0px;
+            left: -29px;
+            clip-path: polygon(20% 0%, 100% 0, 81% 100%, 20% 100%);
+            transform: scale(0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: .4s;
+            h4{
+                @include fontdetails-three(16px,500);
+                color: #fff;
+                cursor: pointer;
+                i{
+                    color: #fff;
+                }
+            }
+        }
+        .details{
+            width: 375px;
+            height: 270px;
+            background: #f1f1f1;
+            position: absolute;
+            top: 40px;
+            left: 44%;
+            clip-path: polygon(22% 0%, 100% 0, 100% 100%, 0 100%);
+            transition: .4s;
+            h2{
+                @include fontdetails-three(20px,500);
+                color: $commoncolor;
+                margin-left: 100px;
+                line-height: 35px;
+                margin-top: 25px;
+            }
+            p{
+                width: 70%;
+                @include fontdetails-two(14px,400);
+                color: $othercolor;
+                margin-left: 100px;
+                line-height: 24px;
+            }
+            i{
+                color: #777777;
+                margin-left: 100px;
+                margin-right: 5px
+            }
+            .c{
+                color: #777777;
+                margin-left: 12px;
+                margin-right: 5px;
+            }
+            h6{
+                @include fontdetails-two(14px,500);
+                color: #8b8b8b;
+            }
+        }
+        &:hover .overlay{
+            transform: scale(1);
+        }
+    }
+    .prev{
+        font-size: 30px;
+        color: #444444;
+        position: absolute;
+        bottom: 75px;
+        left: 625px;
+        z-index: 5;
+        transition: .4s;
+        &::after{
+            width: 35px;
+            height: 35px;
+            border: 1px solid #444444;
+            background: transparent;
+            border-radius: 50%;
+            position: absolute;
+            top: -4px;
+            left: -15px;
+            content: "";
+            transition: .4s;
+            z-index: -1;
+        }
+        &:hover{
+            color: #444444;
+        }
+        &:hover:after{
+            background: $primarycolor;
+            border-color: $primarycolor;
+        }
+    }
+    .next{
+        font-size: 30px;
+        color: #444444;
+        position: absolute;
+        bottom: 75px;
+        right: 500px;
+        &::after{
+            width: 35px;
+            height: 35px;
+            border: 1px solid #444444;
+            border-radius: 50%;
+            position: absolute;
+            top: -4px;
+            left: -22px;
+            content: "";
+            transition: .4s;
+            z-index: -1;
+        }
+        &:hover{
+            color: #444444;
+        }
+        &:hover:after{
+            background: $primarycolor;
+            border-color: $primarycolor;
+        }
+    }
+}
